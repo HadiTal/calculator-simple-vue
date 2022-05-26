@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesgeet" type="text/css" href="css/style.css" />
+    <title>index</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <table>
+            <tr>
+                <td>مقدار عددی اول:</td>
+                <td>
+                    <input type="text" v-model="num1" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>مقدار عددی دوم</td>
+                <td>
+                    <input type="text" v-model="num2" />
+                </td>
+            </tr>
+
+
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <button v-on:click="addNumebrs">جمع</button>
+                    <button v-on:click="multiplay">ضرب</button>
+                    <button v-on:click="divNumbers">تقسیم</button>
+                    <button v-on:click="minsNumbers">تفریق</button>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>{{result}}</p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@next "></script>
+    <script src="js/main.js "></script>
+
+
+
+</body>
+
+</html>
